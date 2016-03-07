@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalabel=no">
+
+  <title>Wyman Site</title>
+
+  <link href="/favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="/styles/normalize.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/styles/main.min.css" media="screen" title="no title" charset="utf-8">
+  <style>
+    #final{
+      background: -webkit-linear-gradient(top, rgba(42, 137, 236, 0.8) 0%, rgb(55, 148, 192) 120%);
+      background: -moz-linear-gradient(top, rgba(42, 137, 236, 0.8) 0%, rgb(55, 148, 192) 120%);
+      background: -o-linear-gradient(top, rgba(42, 137, 236, 0.8) 0%, rgb(55, 148, 192) 120%);
+      background: -ms-linear-gradient(top, rgba(42, 137, 236, 0.8) 0%, rgb(55, 148, 192) 120%);
+      background: linear-gradient(top, rgba(42, 137, 236, 0.8) 0%, rgb(55, 148, 192) 120%);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="mask">
+    <div class="spinner"></div>
+  </div>
+
+
+  <div id="final">
+    <canvas id="canvas-final"></canvas>
+
+    <div class="songlist">
+      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      	 viewBox="0 0 22 17" style="enable-background:new 0 0 22 17;" xml:space="preserve">
+        <g>
+        	<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M11,0C2.971,0,3,7.305,3,7.305v3.833c0,0-0.496-0.173-0.974-0.173
+        		C0,10.965,0,12.019,0,12.019v3.769C0,15.788,0.277,17,2.026,17s1.978-1.212,1.978-1.212V7.303c0,0-0.337-6.183,6.996-6.183
+        		c7.333,0,7.016,6.183,7.016,6.183v8.485c0,0,0.158,1.212,1.992,1.212C21.841,17,22,15.788,22,15.788v-3.769
+        		c0,0,0-1.087-1.992-1.087c-0.558,0-1.008,0.173-1.008,0.173V7.305C19,7.305,19.029,0,11,0z"/>
+        	<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M5,11.545v4.909C5,16.455,5,17,5.5,17C6,17,6,16.455,6,16.455v-4.909
+        		C6,11.545,6,11,5.5,11C5,11,5,11.545,5,11.545z"/>
+        	<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M16,11.545v4.909c0,0,0,0.545,0.5,0.545c0.5,0,0.5-0.545,0.5-0.545v-4.909
+        		c0,0,0-0.545-0.5-0.545C16,11,16,11.545,16,11.545z"/>
+      	</g>
+      </svg>
+
+    </div>
+
+    <div class="overlay">
+      <div class="pannel-labels"></div>
+      <div class="pannel commands">
+        <!-- <div class="commands-item" data-songid="0"><span class="commands-item-title">浮夸</span><span class="commands-item-info">陈奕迅</span><span class="commands-item-tag">Wyman</span></div> -->
+      </div>
+    </div>
+    <div class="button-return">
+      ↑
+    </div>
+  </div>
+
+
+  <div id="content">
+    <div class="page page-1">
+      <div class="container">
+        <h1>没听过<span>黄伟文?!</span></h1>
+        <p>他有很多身份，像演员啊，DJ啦...and 填词人</p>
+        <div class="hor-line"></div>
+        <div class="show-pics">
+          <div class="pic">
+            <div id="lyricist"><img src="images/pic1.jpg"></div>
+            <a id="a-lyricist"><p>作词人</p></a>
+          </div>
+          <div class="pic">
+            <div id="actor"><img src="images/pic1.jpg"></div>
+            <a id="a-actor"><p>临时演员</p></a>
+          </div>
+          <div class="pic">
+            <div id="fashion"><img src="images/pic1.jpg"></div>
+            <a id="a-fashion"><p>潮牌owner</p></a>
+          </div>
+        </div>
+
+        <div id="content-next" class="button-down-2">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+            <path class="svgpath" data-index="path_0" d="M959.50101 841.570087 513.817392 609.617271 64.49899 841.570087 64.49899 710.22055l449.318402-233.492892 445.683619 233.492892L959.50101 841.570087zM959.50101 542.583552 513.817392 309.86121 64.49899 542.583552 64.49899 413.157831l449.318402-236.186234 445.683619 236.186234L959.50101 542.583552z" />
+          </svg>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sub-pages sub-pages-hide">
+
+      <div class="sub-page">
+        <h2>黄伟文 “主题系列”作品汇总</h2>
+
+        <p>注：所谓“系列”某些并未经过词作者本人认可，仅是乐迷一厢情愿的推测。<a href="http://site.douban.com/165812/widget/notes/8920941/note/227063360/">转自豆瓣</a></p>
+
+        <ul class="theme-items">
+        </ul>
+      </div>
+
+
+
+      <div class="sub-page">
+        <h2>参演电影</h2>
+        <table style="">
+        <tr>
+        <td>电影名称</td>
+        <td>年份</td>
+        <td>角色</td>
+        <td>合作演员</td>
+        </tr>
+        <tr>
+        <td><a href="/w/index.php?title=%E5%A4%A9%E7%A9%BA%E5%B0%8F%E8%AA%AA&amp;action=edit&amp;redlink=1" class="new" title="天空小说（页面不存在）">天空小说</a><br />
+        Out of The Blue</td>
+        <td>1995</td>
+        <td>时装界人士</td>
+        <td><a href="/wiki/%E6%9E%97%E6%B5%B7%E5%B3%B0" title="林海峰" class="mw-disambig">林海峰</a>、<a href="/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D" title="葛民辉">葛民辉</a>、一众903DJ</td>
+        </tr>
+        <tr>
+        <td><a href="/wiki/%E6%B5%81%E6%B0%93%E9%86%AB%E7%94%9F" title="流氓医生" class="mw-disambig">流氓医生</a><br />
+        Dr. Mack</td>
+        <td>1995</td>
+        <td>黑社会大佬</td>
+        <td><a href="/wiki/%E6%A2%81%E6%9C%9D%E5%81%89" title="梁朝伟">梁朝伟</a>、<a href="/wiki/%E9%8D%BE%E9%BA%97%E7%B7%B9" title="锺丽缇">锺丽缇</a>、<a href="/wiki/%E8%A8%B1%E5%BF%97%E5%AE%89" title="许志安">许志安</a>、<a href="/wiki/%E6%9D%9C%E5%BE%B7%E5%81%89" title="杜德伟">杜德伟</a></td>
+        </tr>
+        <tr>
+        <td>整蛊王<br />
+        Tricky business</td>
+        <td>1995</td>
+        <td>史松（整蛊人的有钱仔）</td>
+        <td><a href="/wiki/%E7%BE%85%E5%AE%B6%E8%8B%B1" title="罗家英">罗家英</a>、<a href="/wiki/%E5%8A%89%E9%9D%92%E9%9B%B2" title="刘青云">刘青云</a></td>
+        </tr>
+        <tr>
+        <td>偷偷爱你<br />
+        Blind Romance</td>
+        <td>1996</td>
+        <td></td>
+        <td><a href="/wiki/%E6%A2%81%E6%9C%9D%E5%81%89" title="梁朝伟">梁朝伟</a>、<a href="/wiki/%E9%82%B1%E6%B7%91%E8%B2%9E" title="邱淑贞">邱淑贞</a>、<a href="/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D" title="葛民辉">葛民辉</a></td>
+        </tr>
+        <tr>
+        <td>百分百o岩Feel Feel<br />
+        100%...Once More</td>
+        <td>1996</td>
+        <td></td>
+        <td><a href="/wiki/%E9%84%AD%E4%BC%8A%E5%81%A5" title="郑伊健">郑伊健</a>、<a href="/wiki/%E9%84%AD%E7%A7%80%E6%96%87" title="郑秀文">郑秀文</a>、<a href="/wiki/%E9%82%B1%E6%B7%91%E8%B2%9E" title="邱淑贞">邱淑贞</a>、<a href="/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D" title="葛民辉">葛民辉</a></td>
+        </tr>
+        <tr>
+        <td>百分百感觉<br />
+        Feel 100%</td>
+        <td>1996</td>
+        <td></td>
+        <td><a href="/wiki/%E9%84%AD%E4%BC%8A%E5%81%A5" title="郑伊健">郑伊健</a>、<a href="/wiki/%E9%84%AD%E7%A7%80%E6%96%87" title="郑秀文">郑秀文</a>、<a href="/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D" title="葛民辉">葛民辉</a></td>
+        </tr>
+        <tr>
+        <td><a href="/wiki/%E9%87%91%E6%9E%9D%E7%8E%89%E8%91%892" title="金枝玉叶2">金枝玉叶2</a><br />
+        Who's the woman, who's the man</td>
+        <td>1996</td>
+        <td>金曲节目主持人</td>
+        <td><a href="/wiki/%E8%A2%81%E8%A9%A0%E5%84%80" title="袁咏仪">袁咏仪</a>、<a href="/wiki/%E5%BC%B5%E5%9C%8B%E6%A6%AE" title="张国荣">张国荣</a>、<a href="/wiki/%E6%A2%85%E8%89%B7%E8%8A%B3" title="梅艳芳">梅艳芳</a></td>
+        </tr>
+        <tr>
+        <td>四面夏娃<br />
+        4 faces of Eve</td>
+        <td>1996</td>
+        <td>葛民辉的大陆朋友</td>
+        <td><a href="/wiki/%E5%90%B3%E5%90%9B%E5%A6%82" title="吴君如">吴君如</a>、<a href="/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D" title="葛民辉">葛民辉</a></td>
+        </tr>
+        <tr>
+        <td><a href="/wiki/%E7%AE%97%E6%AD%BB%E8%8D%89" title="算死草">算死草</a><br />
+        Lawyer lawyer</td>
+        <td>1997</td>
+        <td>龙二（整蛊人的状元）</td>
+        <td><a href="/wiki/%E5%91%A8%E6%98%9F%E9%A6%B3" title="周星驰">周星驰</a>、<a href="/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D" title="葛民辉">葛民辉</a></td>
+        </tr>
+        <tr>
+        <td><a href="/w/index.php?title=%E6%88%87%E6%98%9F%E5%85%88%E7%94%9F&amp;action=edit&amp;redlink=1" class="new" title="戆星先生（页面不存在）">戆星先生</a></td>
+        <td>1997</td>
+        <td>光头祥（黑社会）</td>
+        <td><a href="/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D" title="葛民辉">葛民辉</a>、<a href="/wiki/%E5%BC%B5%E7%87%8A%E6%82%85" title="张燊悦" class="mw-redirect">张燊悦</a>、<a href="/wiki/%E5%BC%B5%E9%81%94%E6%98%8E" title="张达明">张达明</a>、<a href="/wiki/%E8%A2%81%E8%A9%A0%E5%84%80" title="袁咏仪">袁咏仪</a></td>
+        </tr>
+        <tr>
+        <td>夜半两点钟<br />
+        02:00 AM</td>
+        <td>1997</td>
+        <td></td>
+        <td><a href="/wiki/%E9%99%B3%E5%AF%B6%E8%93%AE" title="陈宝莲" class="mw-redirect">陈宝莲</a>、<a href="/wiki/%E9%99%B3%E5%B0%8F%E6%98%A5" title="陈小春" class="mw-redirect">陈小春</a>、<a href="/wiki/%E9%BB%8E%E7%91%9E%E6%81%A9" title="黎瑞恩">黎瑞恩</a>、<a href="/wiki/%E5%BE%90%E9%8C%A6%E6%B1%9F" title="徐锦江">徐锦江</a>、<a href="/wiki/%E5%91%A8%E6%96%87%E5%81%A5" title="周文健">周文健</a></td>
+        </tr>
+        <tr>
+        <td>爱你爱到杀死你<br />
+        Killing me tenderly</td>
+        <td>1997</td>
+        <td>Sammi的经理人</td>
+        <td><a href="/wiki/%E9%BB%8E%E6%98%8E" title="黎明">黎　明</a>、<a href="/wiki/%E9%84%AD%E7%A7%80%E6%96%87" title="郑秀文">郑秀文</a>、<a href="/wiki/%E8%B0%B7%E5%BE%B7%E6%98%AD" title="谷德昭">谷德昭</a>、<a href="/wiki/%E5%90%B3%E5%90%9B%E5%A6%82" title="吴君如">吴君如</a>、<a href="/wiki/%E9%BB%8E%E8%80%80%E7%A5%A5" title="黎耀祥">黎耀祥</a></td>
+        </tr>
+        <tr>
+        <td>初恋无限Touch<br />
+        First love unlimited</td>
+        <td>1997</td>
+        <td>大咪咪</td>
+        <td><a href="/wiki/%E9%99%B3%E6%9B%89%E6%9D%B1" title="陈晓东">陈晓东</a>、<a href="/wiki/%E6%A2%81%E8%A9%A0%E7%90%AA" title="梁咏琪">梁咏琪</a></td>
+        </tr>
+        <tr>
+        <td><a href="/w/index.php?title=KO%E9%9B%B7%E9%9C%86%E4%B8%80%E6%93%8A&amp;action=edit&amp;redlink=1" class="new" title="KO雷霆一击（页面不存在）">KO雷霆一击</a><br />
+        Knock Off</td>
+        <td>1998</td>
+        <td></td>
+        <td><a href="/wiki/%E5%BE%90%E5%85%8B" title="徐克" class="mw-disambig">徐克</a>导演，<a href="/wiki/%E5%B0%9A%E6%A0%BC%E4%BA%91%E9%A1%BF" title="尚格云顿" class="mw-redirect">尚格云顿</a>主演</td>
+        </tr>
+        <tr>
+        <td><a href="/w/index.php?title=%E4%BA%BA%E5%A6%96%E6%89%93%E6%8E%92%E7%90%83&amp;action=edit&amp;redlink=1" class="new" title="人妖打排球（页面不存在）">人妖打排球</a><br />
+        The iron ladies</td>
+        <td>2000</td>
+        <td>柏芝(配音)<br />
+        （同时主唱主题曲）</td>
+        <td><a href="/wiki/%E5%90%B3%E5%90%9B%E5%A6%82" title="吴君如">吴君如</a>、<a href="/wiki/%E8%B0%B7%E5%BE%B7%E6%98%AD" title="谷德昭">谷德昭</a>、<a href="/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D" title="葛民辉">葛民辉</a></td>
+        </tr>
+        <tr>
+        <td><a href="/wiki/%E7%8E%89%E5%A5%B3%E6%B7%BB%E4%B8%81" title="玉女添丁" class="mw-disambig">玉女添丁</a><br />
+        Dummy mommy, without a baby<br /></td>
+        <td>2001</td>
+        <td>阿劲</td>
+        <td><a href="/wiki/%E6%A5%8A%E5%8D%83%E5%AC%85" title="杨千嬅">杨千嬅</a>、<a href="/wiki/%E9%99%B3%E5%86%A0%E5%B8%8C" title="陈冠希">陈冠希</a></td>
+        </tr>
+        <tr>
+        <td>4x100水着份子<br />
+        United we stand, and swim</td>
+        <td>2001</td>
+        <td>黑社会大哥<br />
+        （同时主唱主题曲）</td>
+        <td><a href="/wiki/%E9%BB%83%E7%A7%8B%E7%94%9F" title="黄秋生">黄秋生</a>、<a href="/wiki/%E6%A2%81%E5%BF%97%E5%81%A5" title="梁志健" class="mw-redirect">森　美</a>、<a href="/wiki/%E9%98%AE%E5%B0%8F%E5%84%80" title="阮小仪">小　仪</a>、<a href="/wiki/%E5%90%B3%E4%BD%A9%E6%85%88" title="吴佩慈">吴佩慈</a></td>
+        </tr>
+        <tr>
+        <td><a href="/w/index.php?title=%E5%88%A5%E6%88%80&amp;action=edit&amp;redlink=1" class="new" title="别恋（页面不存在）">别恋</a><br />
+        Stolen love</td>
+        <td>2001</td>
+        <td>洛西（天使）</td>
+        <td><a href="/wiki/%E6%9D%8E%E5%BD%A9%E8%8F%AF_(%E8%97%9D%E4%BA%BA)" title="李彩华 (艺人)" class="mw-redirect">李彩华</a>、<a href="/wiki/%E6%9E%97%E5%B3%AF" title="林峯">林　峯</a>、<a href="/wiki/%E5%BC%B5%E9%81%94%E6%98%8E" title="张达明">张达明</a></td>
+        </tr>
+        <tr>
+        <td><a href="/wiki/%E6%96%B0%E7%B4%AE%E5%B8%AB%E5%A6%B9" title="新扎师妹">新扎师妹</a><br />
+        Love undercover</td>
+        <td>2002</td>
+        <td>千嬅朋友</td>
+        <td><a href="/wiki/%E6%A5%8A%E5%8D%83%E5%AC%85" title="杨千嬅">杨千嬅</a>、<a href="/wiki/%E5%90%B3%E5%BD%A5%E7%A5%96" title="吴彦祖">吴彦祖</a>、<a href="/wiki/%E9%BB%83%E6%B5%A9%E7%84%B6_(%E6%BC%94%E5%93%A1)" title="黄浩然 (演员)" class="mw-redirect">黄浩然</a></td>
+        </tr>
+        <tr>
+        <td><a href="/wiki/%E9%80%99%E5%80%8B%E5%A4%8F%E5%A4%A9%E6%9C%89%E7%95%B0%E6%80%A7" title="这个夏天有异性">这个夏天有异性</a><br />
+        Summer breeze of love</td>
+        <td>2002</td>
+        <td>王杰及许绍雄旧同学</td>
+        <td><a href="/wiki/%E8%94%A1%E5%8D%93%E5%A6%8D" title="蔡卓妍">蔡卓妍</a>、<a href="/wiki/%E9%8D%BE%E6%AC%A3%E6%A1%90" title="锺欣桐" class="mw-redirect">锺欣桐</a>、<a href="/wiki/%E7%8E%8B%E5%82%91_(%E6%AD%8C%E6%89%8B)" title="王杰 (歌手)">王　杰</a></td>
+        </tr>
+        <tr>
+        <td><a href="/w/index.php?title=%E8%B3%AD%E4%BF%A02002&amp;action=edit&amp;redlink=1" class="new" title="赌侠2002（页面不存在）">赌侠2002</a><br />
+        The conman 2002</td>
+        <td>2002</td>
+        <td>何红申</td>
+        <td><a href="/wiki/%E5%BC%B5%E5%AE%B6%E8%BC%9D" title="张家辉">张家辉</a>、<a href="/wiki/%E9%A6%AE%E5%BE%B7%E5%80%AB" title="冯德伦">冯德伦</a>、<a href="/wiki/%E7%8E%8B%E7%A7%80%E7%90%B3" title="王秀琳">王秀琳</a></td>
+        </tr>
+        <tr>
+        <td><a href="/w/index.php?title=%E4%BA%94%E5%80%8B%E5%9A%87%E9%AC%BC%E7%9A%84%E5%B0%91%E5%B9%B4&amp;action=edit&amp;redlink=1" class="new" title="五个吓鬼的少年（页面不存在）">五个吓鬼的少年</a><br />
+        The mummy, aged 19</td>
+        <td>2002</td>
+        <td>牧师</td>
+        <td><a href="/wiki/%E5%BE%90%E5%A4%A9%E4%BD%91" title="徐天佑">徐天佑</a>、<a href="/wiki/%E9%BB%83%E5%8F%88%E5%8D%97" title="黄又南">黄又南</a>、<a href="/wiki/%E6%9D%8E%E8%98%A2%E6%80%A1" title="李茏怡">李茏怡</a>、<a href="/wiki/%E5%B0%91%E7%88%BA%E5%8D%A0" title="少爷占">少爷占</a></td>
+        </tr>
+        <tr>
+        <td><a href="/wiki/%E6%88%91%E5%AE%B6%E6%9C%89%E4%B8%80%E9%9A%BB%E6%B2%B3%E6%9D%B1%E7%8D%85" title="我家有一只河东狮">我家有一只河东狮</a><br />
+        The lion roars</td>
+        <td>2002</td>
+        <td>柳神侠</td>
+        <td><a href="/wiki/%E5%8F%A4%E5%A4%A9%E6%A8%82" title="古天乐">古天乐</a>、<a href="/wiki/%E5%BC%B5%E6%A0%A2%E8%8A%9D" title="张柏芝">张柏芝</a>、<a href="/wiki/%E8%A8%B1%E7%B4%B9%E9%9B%84" title="许绍雄">许绍雄</a>、<a href="/wiki/%E9%BB%83%E6%B5%A9%E7%84%B6_(%E6%BC%94%E5%93%A1)" title="黄浩然 (演员)" class="mw-redirect">黄浩然</a></td>
+        </tr>
+        <tr>
+        <td><a href="/wiki/%E4%B9%BE%E6%9F%B4%E7%83%88%E7%81%AB" title="干柴烈火">干柴烈火</a><br />
+        Dry wood fierce fire</td>
+        <td>2002</td>
+        <td>散打王</td>
+        <td><a href="/wiki/%E6%A5%8A%E5%8D%83%E5%AC%85" title="杨千嬅">杨千嬅</a>、<a href="/wiki/%E5%8F%A4%E5%A4%A9%E6%A8%82" title="古天乐">古天乐</a>、<a href="/wiki/%E9%99%B3%E6%85%A7%E7%8F%8A" title="陈慧珊">陈慧珊</a>、<a href="/wiki/%E5%BC%B5%E9%81%94%E6%98%8E" title="张达明">张达明</a></td>
+        </tr>
+        <tr>
+        <td><a href="/wiki/%E8%B3%A4%E7%B2%BE%E5%85%88%E7%94%9F" title="贱精先生">贱精先生</a><br />
+        If U Care</td>
+        <td>2002</td>
+        <td></td>
+        <td><a href="/wiki/%E9%99%B3%E5%A5%95%E8%BF%85" title="陈奕迅">陈奕迅</a>、<a href="/wiki/%E9%8D%BE%E6%AC%A3%E6%A1%90" title="锺欣桐" class="mw-redirect">锺欣桐</a>、<a href="/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D" title="葛民辉">葛民辉</a>、<a href="/wiki/%E7%9B%A7%E5%B7%A7%E9%9F%B3" title="卢巧音">卢巧音</a></td>
+        </tr>
+        <tr>
+        <td><a href="/wiki/%E4%B8%8B%E4%B8%80%E7%AB%99%E2%80%A6%E5%A4%A9%E5%90%8E" title="下一站…天后">下一站…天后</a><br />
+        Diva.Ah Hey</td>
+        <td>2003</td>
+        <td><a href="/wiki/%E4%BC%8D%E6%A8%82%E5%9F%8E" title="伍乐城">伍乐城</a></td>
+        <td><a href="/wiki/%E8%94%A1%E5%8D%93%E5%A6%8D" title="蔡卓妍">蔡卓妍</a>、<a href="/wiki/%E9%99%B3%E5%B0%8F%E6%98%A5" title="陈小春" class="mw-redirect">陈小春</a>、<a href="/wiki/%E5%91%A8%E9%BA%97%E6%B7%87" title="周丽淇">周丽淇</a>、<a href="/wiki/%E4%BD%99%E6%96%87%E6%A8%82" title="余文乐">余文乐</a></td>
+        </tr>
+        <tr>
+        <td><a href="/wiki/%E9%87%91%E9%9B%9ESSS" title="金鸡SSS">金鸡SSS</a><br />
+        Golden Chicken S</td>
+        <td>2014</td>
+        <td><a href="/w/index.php?title=%E6%8B%93%E4%B9%9F%E5%93%A5&amp;action=edit&amp;redlink=1" class="new" title="拓也哥（页面不存在）">拓也哥</a></td>
+        <td><a href="/wiki/%E5%90%B3%E5%90%9B%E5%A6%82" title="吴君如">吴君如</a></td>
+        </tr>
+        <tr>
+        <td><a href="/wiki/12%E9%87%91%E9%B4%A8" title="12金鸭">12金鸭</a><br />
+        12 Golden Ducks</td>
+        <td>2015</td>
+        <td>链球哥</td>
+        <td><a href="/wiki/%E5%90%B3%E5%90%9B%E5%A6%82" title="吴君如">吴君如</a></td>
+        </tr>
+        </table>
+      </div>
+
+
+      <div class="sub-page">
+
+        <div class="content">
+          <h1>黄伟文：『最憎写字<br>最爱买衫』</h1>
+          <p>
+            他不介意被人笑“垃圾”，就像他从不介意是否被尊为“全港最会穿的人”。他是用硕大王冠和 Tom Ford 燕尾服加冕自己的时装奴；他是身裹 YSL 流苏皮草的新晋土豪；他是抢尽社交网络版面的自拍狂人；他是头戴礼帽，身着 Tomas Chan 的浑身带刺的绅士；他是用黑金炸弹武装自己的“光明会”一员……竭尽一生之力堆砌品牌，走街串巷，步履不停，浮夸到令人动容——他，就是 Wyman。
+          </p>
+          <div class="book">
+            <div class="book-cover">
+              <img src="images/book.jpg" alt="《生于天桥底》封面">
+            </div>
+            <div class="book-info">
+              <h2>时尚专栏合辑</h2>
+              <p>
+                《<a href="https://book.douban.com/subject/6759066/"  target="_blank">生于天桥底</a>》<br><br>
+                作者: 黄伟文 <br>
+                出版年: 2012-1 <br>
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="return">X</div>
+    </div>
+
+  </div>
+
+
+
+  <div id="load">
+    <div id="load-bgs">
+      <canvas id="one"></canvas>
+    </div>
+
+    <div class="title-1">
+      <h1>Wyman</h1>
+    </div>
+    <div id="load-type" class="fixed">
+      <p class="">若你喜欢怪人</p>
+      <p class="">其实我很美</p>
+    </div>
+    <div class="title-2">
+      <h1>黄伟文</h1>
+    </div>
+    <!-- <div class="hor-line"></div> -->
+    <div id="load-next" class="button-down">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+        <path class="svgpath" data-index="path_0" d="M959.50101 841.570087 513.817392 609.617271 64.49899 841.570087 64.49899 710.22055l449.318402-233.492892 445.683619 233.492892L959.50101 841.570087zM959.50101 542.583552 513.817392 309.86121 64.49899 542.583552 64.49899 413.157831l449.318402-236.186234 445.683619 236.186234L959.50101 542.583552z" />
+      </svg>
+    </div>
+  </div>
+</body>
+
+<script src="scripts/canvas-pixel-image.js"></script>
+<script src="scripts/shape-shifter.js"></script>
+<script src="scripts/app.js"></script>
+</html>
